@@ -2,25 +2,46 @@
 
 
 
-<div id="loginBox">
-    <div id="devise-signup"></div>
-</div>
-
-
-  <div class="isotope" style="position: relative; overflow: hidden; height: 360px;" id="container">
-
-    <% @geostories.each do |geostory| %>
-
-      <div style="position: absolute; left: 0px; top: 0px; transform: translate(5px, 5px);" class="element other nonmetal    isotope-item" data-symbol="H" data-category="other">
-        <span class="title">Title of prose</span>
-        <p class="content">
-                  <%= geostory.text %>
+      <div id="loginBox">
+          <div id="devise-signup"></div>
       </div>
 
-    <% end %>
+
+        <div class="isotope" style="position: relative; overflow: hidden; height: 360px;" id="container">
+
+            <div style="position: absolute; left: 0px; top: 0px; transform: translate(5px, 5px);" class="element other nonmetal     metabox     isotope-item" data-symbol="H" data-category="other">
+              <span class="title">Meta</span>
+              <p class="content">
+                <span><b>Tags</b></span>
+                <ul id="tags">
+                    <li class="tag">Sad</li>
+                    <li class="tag">Action</li>
+                    <li class="tag">Travel</li>
+                    <li class="tag">Space</li>
+                    <li class="tag">Happy</li>
+                    <li class="tag">Funny</li>
+                    <li class="tag">Crazy</li>
+                    <li class="tag">Scifi</li>
+                    <li class="tag">Mystery</li>
+                    <li class="tag">Scary</li>
+                    <li class="tag">Kingdom</li>
+                </ul>
+              </p>
+            </div>
+
+          <% @geostories.each do |geostory| %>
+
+            <div style="position: absolute; left: 0px; top: 0px; transform: translate(5px, 5px);" class="element other nonmetal    isotope-item" data-symbol="H" data-category="other">
+              <span class="title">Title of prose</span>
+              <p class="content">
+                <%= geostory.text %>
+              </p>
+            </div>
+
+          <% end %>
 
 
-</div>
+      </div>
 
 
 

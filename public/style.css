@@ -52,10 +52,20 @@ nav.top-bar {
     width: 360px;
     height: 480px;
 }
-.element.menu {
-    width: 220px;
-    height: 340px;
+.element.metabox {
+    width: 240px;
+    height: 360px;
 }
+    ul#tags {
+        list-style: none;
+    }
+        ul#tags .tag {
+            display: inline;
+            background-color: cyan; /*set with js to random colors*/
+            border-radius: 3px;
+            padding-left: 3px;
+            padding-right: 3px;
+        }
     .element .title {
             font-weight: bold;
             font-size: 1.1em;
@@ -63,10 +73,12 @@ nav.top-bar {
     .element .content {
         margin-top: 3px;
         text-align: justify;
+        text-justify: kashida;
         line-height: 1em;
     }
     .element.big .content, .element.bigger .content {
         text-align: justify;
+        text-justify: kashida;
     }
 
 
