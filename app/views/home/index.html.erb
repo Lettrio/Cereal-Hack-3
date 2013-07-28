@@ -1,0 +1,30 @@
+
+
+
+
+<div id="loginBox">
+    <div id="devise-signup"></div>
+</div>
+
+
+  <div class="isotope" style="position: relative; overflow: hidden; height: 360px;" id="container">
+
+    <% @geostories.each do |geostory| %>
+
+      <div style="position: absolute; left: 0px; top: 0px; transform: translate(5px, 5px);" class="element other nonmetal    isotope-item" data-symbol="H" data-category="other">
+        <span class="title">Title of prose</span>
+        <p class="content">
+                  <%= geostory.text %>
+      </div>
+
+    <% end %>
+
+
+</div>
+
+
+
+
+
+
+
